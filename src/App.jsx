@@ -23,8 +23,8 @@ function App() {
 
   return (
     <>
-      <div className="container bg-lightGrayishBlue1 p-8 font-plusJakartaSans w-full min-h-[100vh] flex justify-center items-center">
-        <div className="notifications bg-white p-2 sm:p-6 rounded-xl w-full sm:w-[750px]">
+      <div className="container bg-lightGrayishBlue1 p-2 sm:p-8 font-plusJakartaSans w-full min-h-[100vh] flex justify-center items-center">
+        <div className="notifications bg-white p-6 rounded-xl w-full sm:w-[750px]">
           <header className="flex justify-between">
             <h2 className="flex justify-center items-center">
               <span className="text-2xl font-bold text-veryDarkBlue">
