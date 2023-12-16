@@ -36,7 +36,7 @@ function App() {
             </h2>
             <span
               onClick={markRead}
-              className="text-md text-grayishBlue cursor-pointer"
+              className="text-md hover:text-blue text-grayishBlue cursor-pointer"
             >
               Mark all as read
             </span>
