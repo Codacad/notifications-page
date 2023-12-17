@@ -26,16 +26,16 @@ function App() {
         <div className="notifications bg-white p-6 sm:rounded-xl w-full sm:w-[750px]">
           <header className="flex justify-between">
             <h2 className="flex justify-center items-center">
-              <span className="text-2xl font-bold text-veryDarkBlue">
+              <span className="text-1xl sm:text-2xl font-bold text-veryDarkBlue">
                 Notifications
               </span>{" "}
-              <span className="text-white bg-blue w-8 h-6 flex justify-center font-[800] rounded-sm ml-2 items-center">
+              <span className="text-white bg-blue w-6 max-sm:text-sm sm:w-8 h-5 sm:h-6 flex justify-center font-[600] sm:font-[800] rounded-sm ml-2 items-center">
                 {unreadCount}
               </span>
             </h2>
             <span
               onClick={markRead}
-              className="text-md hover:text-blue text-grayishBlue cursor-pointer"
+              className="text-sm sm:text-md hover:text-blue text-grayishBlue cursor-pointer"
             >
               Mark all as read
             </span>
@@ -55,15 +55,15 @@ function App() {
                   <div className="content flex flex-col">
                     <div className="flex items-center gap-2">
                       <div>
-                        <strong className="font-bold text-veryDarkBlue hover:text-blue cursor-pointer">
+                        <strong className="font-bold max-sm:text-sm text-veryDarkBlue hover:text-blue cursor-pointer">
                           {notif.username}
                         </strong>
-                        <span className="text-darkGrayishBlue">
+                        <span className="text-darkGrayishBlue max-sm:text-sm">
                           {" "}
                           {notif.actionText}
                         </span>
                         <strong
-                          className={`text-darkGrayishBlue cursor-pointer hover:text-blue ${
+                          className={`text-darkGrayishBlue max-sm:text-sm cursor-pointer hover:text-blue ${
                             notif.focus == "Chess Club" ? "text-blue" : ""
                           }`}
                         >
@@ -74,17 +74,16 @@ function App() {
                       {notif.read ? (
                         ""
                       ) : (
-                        <span className="w-2 block h-2 rounded-full bg-red"></span>
+                        <span className="w-1 h-1 sm:w-2 block sm:h-2 rounded-full bg-red"></span>
                       )}
                     </div>
-                    <div className="ago text-sm text-grayishBlue">
+                    <div className="ago text-[12px] sm:text-sm text-grayishBlue">
                       {notif.ago}
                     </div>
                   </div>
                   <div>
                     {notif.message && (
-                      <div className="message text-darkGrayishBlue hover:bg-lightGrayishBlue1 w-full border border-lightGrayishBlue2 p-4 mb-4 rounded-md mt-2">
-                        {notif.message}
+                      <div className="message max-sm:text-sm text-darkGrayishBlue hover:bg-lightGrayishBlue1 w-full border border-lightGrayishBlue2 p-4 mb-4 rounded-md mt-2">                        {notif.message}
                       </div>
                     )}
                   </div>
