@@ -92,7 +92,7 @@ function App() {
                 </div>
                 {notif.commentedPicture && (
                   <div className="w-[40px] h-[40px] ml-auto">
-                    <img src={notif.commentedPicture} alt="" />
+                    <img src={`${notif.commentedPicture}`} alt="" />
                   </div>
                 )}
               </div>

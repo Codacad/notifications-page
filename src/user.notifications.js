@@ -40,7 +40,7 @@ const notifications = [
     username: "Kimbarly Smith",
     userPicture:"/assets/images/avatar-kimberly-smith.webp",
     actionText: "commented on your picture",
-    commentedPicture:"/src/assets/images/image-chess.webp",
+    commentedPicture:"src/assets/images/image-chess.webp",
     picture: "",
     ago: "1 week ago",
     read: true,
